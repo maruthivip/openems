@@ -27,7 +27,7 @@ import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 	StateMachine manualMode() default StateMachine.BALANCING;
 
 	@AttributeDefinition(name = "Control-Mode", description = "Set the control-mode.")
-	ControlMode controlMode() default ControlMode.CHARGE_GRID;
+	ControlMode controlMode() default ControlMode.CHARGE_CONSUMPTION;
 
 	// This will eventually be replaced by GridBuySoftLimit in Meta
 	@Deprecated()
